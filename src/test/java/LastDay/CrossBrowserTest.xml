@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Cross Browser Test">
+    <test name="Chrome Test" preserve-order="true">
+        <parameter name="Browser" value="chrome"></parameter>
+        <classes>
+            <class name="LastDay.List_WebElement_USPS_Crossbrowser" />
+        </classes>
+    </test> <!-- Test -->
+    <test name="Firefox Test" preserve-order="true">
+        <parameter name="Browser" value="firefox"></parameter>
+        <classes>
+            <class name="LastDay.List_WebElement_USPS_Crossbrowser" />
+        </classes>
+    </test> <!-- Test -->
+    <test name="Safari Test" preserve-order="true">
+        <parameter name="Browser" value="safari"></parameter>
+        <classes>
+            <class name="LastDay.List_WebElement_USPS_Crossbrowser" />
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->

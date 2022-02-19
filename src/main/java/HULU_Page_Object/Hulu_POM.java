@@ -1,16 +1,16 @@
 package HULU_Page_Object;
 
-import Reusable_Library.Reusable_Actions;
+import Reusable_Library.Reusable_Annotations;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 
-public class Hulu_POM extends Reusable_Actions {
+public class Hulu_POM extends Reusable_Annotations {
     @Test(priority = 1)
     public void huluSearchLoop() {
         ArrayList<String> email = new ArrayList<>();
-        email.add("dsnkkdsnd@gmail.com");
-        email.add("sdksdjjksd@gmail.com");
+        email.add("hjhkk08@gmail.com");
+        email.add("kjljli09@gmail.com");
 
         ArrayList<String> pass = new ArrayList<>();
         pass.add("Camry2020!");
@@ -53,9 +53,9 @@ public class Hulu_POM extends Reusable_Actions {
                 System.out.println("Title doesn't match. Actual title is " + actualTitle);
             }
             BaseClass.homepage().GetHuluPlan();
-            BaseClass.info().Email("jfiijfdjidfjfdiifj@gmail.com");
-            BaseClass.info().Password("kdkdslkdsdkl");
-            BaseClass.info().FirstName("Arjkjss");
+            BaseClass.info().Email("hjhjhjh@gmail.com");
+            BaseClass.info().Password("hhkhjkj");
+            BaseClass.info().FirstName("name");
             BaseClass.info().Birthmonth();
             BaseClass.info().Birthmonths("June");
             BaseClass.info().Birthday();

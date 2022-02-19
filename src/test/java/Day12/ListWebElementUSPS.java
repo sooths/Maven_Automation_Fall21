@@ -1,6 +1,6 @@
 package Day12;
 
-import Reusable_Library.Reusable_Actions;
+import Reusable_Library.Reusable_Annotations;
 import Reusable_Library.Reusable_Actions_Logger;
 import com.relevantcodes.extentreports.LogStatus;
 import org.openqa.selenium.By;
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class ListWebElementUSPS extends Reusable_Actions {
+public class ListWebElementUSPS extends Reusable_Annotations {
     @Test
     public void uspsTest() {
         //navigate to usps

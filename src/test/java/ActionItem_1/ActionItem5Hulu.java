@@ -1,13 +1,13 @@
 package ActionItem_1;
 
-import Reusable_Library.Reusable_Actions;
+import Reusable_Library.Reusable_Annotations;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 
-public class ActionItem5Hulu extends Reusable_Actions {
+public class ActionItem5Hulu extends Reusable_Annotations {
     WebDriver driver;
 
     @BeforeSuite

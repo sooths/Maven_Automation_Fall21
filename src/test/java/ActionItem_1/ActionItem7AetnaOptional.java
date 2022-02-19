@@ -1,6 +1,6 @@
 package ActionItem_1;
 
-import Reusable_Library.Reusable_Actions;
+import Reusable_Library.Reusable_Annotations;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 
-public class ActionItem7AetnaOptional extends Reusable_Actions {
+public class ActionItem7AetnaOptional extends Reusable_Annotations {
 
     @Test
     public void huluSearchLoop() {

@@ -1,11 +1,11 @@
 package Day12;
 
-import Reusable_Library.Reusable_Actions;
+import Reusable_Library.Reusable_Annotations;
 import Reusable_Library.Reusable_Actions_Logger;
 import com.relevantcodes.extentreports.LogStatus;
 import org.testng.annotations.Test;
 
-public class ExtentReportUSPS extends Reusable_Actions {
+public class ExtentReportUSPS extends Reusable_Annotations {
     @Test()
     public void uspsTest() {
         logger.log(LogStatus.INFO, "Navigate to USPS home page");

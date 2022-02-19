@@ -1,6 +1,6 @@
 package USPS_Page_Object;
 
-import Reusable_Library.Reusable_Actions;
+import Reusable_Library.Reusable_Annotations;
 import Reusable_Library.Reusable_Actions_Loggers_POM;
 import com.relevantcodes.extentreports.ExtentTest;
 import org.openqa.selenium.WebDriver;
@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class SendMailAndPackages extends Reusable_Actions {
+public class SendMailAndPackages extends Reusable_Annotations {
 
     //constructor is helper method that allows you to identify objects in your pom
     //so later you can class those methods in your test class
@@ -18,7 +18,7 @@ public class SendMailAndPackages extends Reusable_Actions {
 
     public SendMailAndPackages(WebDriver driver) {
         PageFactory.initElements(driver, this);
-        this.logger = Reusable_Actions.logger;
+        this.logger = Reusable_Annotations.logger;
     }//end of the constructor method
 
     @FindBy(xpath = "//*[text()='Print a Label']")

@@ -11,7 +11,7 @@ import org.testng.annotations.BeforeSuite;
 import java.lang.reflect.Method;
 import java.util.UUID;
 
-public class Reusable_Actions {
+public class Reusable_Annotations {
     public static WebDriver driver;
     public static ExtentReports reports;
     public static ExtentTest logger;

@@ -1,10 +1,10 @@
 package USPS_Page_Object;
 
-import Reusable_Library.Reusable_Actions;
+import Reusable_Library.Reusable_Annotations;
 import com.relevantcodes.extentreports.LogStatus;
 import org.testng.annotations.Test;
 
-public class USPS_Ship_A_Label_POM extends Reusable_Actions {
+public class USPS_Ship_A_Label_POM extends Reusable_Annotations {
     @Test
 public void USPS_Verify_Tabs_Then_Ship_A_Label(){
 

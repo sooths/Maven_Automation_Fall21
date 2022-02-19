@@ -1,10 +1,10 @@
 package EXPRESS_Page_Object;
 
-import Reusable_Library.Reusable_Actions;
+import Reusable_Library.Reusable_Annotations;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-public class BaseClass extends Reusable_Actions {
+public class BaseClass extends Reusable_Annotations {
     public BaseClass(WebDriver driver){
         PageFactory.initElements(driver,this);
     }//end of constructor class

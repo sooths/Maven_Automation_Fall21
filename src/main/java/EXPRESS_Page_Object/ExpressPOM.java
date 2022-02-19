@@ -1,9 +1,8 @@
 package EXPRESS_Page_Object;
 
 import Reusable_Library.ReusableActions;
-import Reusable_Library.Reusable_Actions;
+import Reusable_Library.Reusable_Annotations;
 import Reusable_Library.Reusable_Actions_Logger;
-import Reusable_Library.Reusable_Actions_Loggers_POM;
 import com.relevantcodes.extentreports.LogStatus;
 import jxl.Sheet;
 import jxl.Workbook;
@@ -12,13 +11,12 @@ import jxl.write.Label;
 import jxl.write.WritableSheet;
 import jxl.write.WritableWorkbook;
 import jxl.write.WriteException;
-import org.jsoup.Connection;
 import org.testng.annotations.Test;
 
 import java.io.File;
 import java.io.IOException;
 
-public class ExpressPOM extends Reusable_Actions {
+public class ExpressPOM extends Reusable_Annotations {
     @Test
     public void Express_POMs() throws BiffException, IOException, WriteException {
         Workbook readableFile = Workbook.getWorkbook(new File("src/main/resources/GoogleSearch.xls"));

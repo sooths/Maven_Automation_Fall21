@@ -1,7 +1,7 @@
 package ActionItem_1;
 
 import Reusable_Library.ReusableActions;
-import Reusable_Library.Reusable_Actions;
+import Reusable_Library.Reusable_Annotations;
 import Reusable_Library.Reusable_Actions_Logger;
 import jxl.Sheet;
 import jxl.Workbook;
@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 import java.io.File;
 import java.io.IOException;
 
-public class ActionItem8Express extends Reusable_Actions {
+public class ActionItem8Express extends Reusable_Annotations {
     @Test()
     public void ExpressTest() throws BiffException, IOException, WriteException, InterruptedException {
         Workbook readableFile = Workbook.getWorkbook(new File("src/main/resources/GoogleSearch.xls"));
