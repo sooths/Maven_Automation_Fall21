@@ -32,5 +32,14 @@ public class Scenario1 extends Reusable_Annotations {
         Reusable_Actions_Logger.sendKeysMethod(driver,"//*[@id='alias']","8926 184st",logger,"Address");
         Reusable_Actions_Logger.clickMethod(driver,"//*[@id='submitAccount']",logger,"Register");
         Reusable_Actions_Logger.clickMethod(driver,"//*[@class='logout']",logger,"Logout");
+
+        //Scenario 1: (Create an account)
+        //using your browser open : http://automationpractice.com
+        //Tap on SignIn
+        //In create account enter email
+        //fill out all the necessary details and tap on Register
+        //once Registered, tap on username and tap on YOUR PERSONAL INFORMATION
+        //Now Verify the First Name and Last Name and then sign out
+
     }
 }
