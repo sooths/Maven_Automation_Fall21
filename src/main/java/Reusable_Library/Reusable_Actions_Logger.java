@@ -124,13 +124,13 @@ public class Reusable_Actions_Logger {
         return result;
     }//end of click getTextMethod
 
-    public static void selectMethod(WebDriver driver, String xpath, ExtentTest logger, String userData, String elementName) {
+    public static void selectMethod(WebDriver driver, String xpath, ExtentTest logger, ExtentTest userData, String elementName) {
         WebDriverWait wait = new WebDriverWait(driver, 15);
         System.out.println("Selecting element " + elementName);
         logger.log(LogStatus.INFO, "Selecting element  " + elementName);
         try {
             WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
-            element.sendKeys(userData);
+            element.sendKeys((CharSequence) userData);
         } catch (Exception e) {
             System.out.println("Unable to select " + elementName + " Error" + e);
             logger.log(LogStatus.FAIL, "Unable to select " + elementName + " Error:" + e);

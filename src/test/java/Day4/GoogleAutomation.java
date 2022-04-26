@@ -7,18 +7,19 @@ public class GoogleAutomation {
 
         //set the property of the chromedriver we are using
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver");
+
         //define the web driver you are using
         ChromeDriver driver = new ChromeDriver();
-
+        //webdriverManager.chromedriver().setup();
         //simply open the google web site
         driver.navigate().to("https://www.facebook.com");
 
         //maximize my browser
-        // driver.manage().window().fullscreen(); //for mac
-        driver.manage().window().maximize(); //for windows
+        driver.manage().window().fullscreen(); //for mac
+        //driver.manage().window().maximize(); //for windows
 
         //close it
-        //driver.close();
+        driver.close();
     }  //end of main
 } //end of java class
 
